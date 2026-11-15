@@ -1,0 +1,67 @@
+{
+  "name": "iconsax-next",
+  "version": "1.0.0",
+  "description": "Tree-shakeable, multi-variant Iconsax SVG icons for React and Next.js",
+  "author": {
+    "name": "bagheri-dev",
+    "url": "https://github.com/bagheri-dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bagheri-dev/iconsax-next.git"
+  },
+  "homepage": "https://github.com/bagheri-dev/iconsax-next#readme",
+  "bugs": {
+    "url": "https://github.com/bagheri-dev/iconsax-next/issues"
+  },
+  "keywords": [
+    "iconsax",
+    "icons",
+    "react",
+    "nextjs",
+    "svg",
+    "typescript"
+  ],
+  "license": "MIT",
+  "sideEffects": false,
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js",
+      "require": "./dist/icons/*.cjs"
+    },
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "build": "pnpm generate && tsup",
+    "prepublishOnly": "pnpm build"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@svgr/plugin-svgo": "^8.1.0",
+    "@types/react": "^19.0.0",
+    "react": "^19.0.0",
+    "svgo": "^3.3.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.7.0"
+  }
+}
