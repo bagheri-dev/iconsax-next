@@ -1,6 +1,9 @@
 <div align="center">
   <h1>iconsax-next</h1>
   <p>
+    <strong><a href="https://iconsax-next-landing.vercel.app">Explore & Search All 1,050+ Icons Live →</a></strong>
+  </p>
+  <p>
     A modern, zero-dependency, tree-shakeable collection of <strong>1,050+ Iconsax icons</strong> built for <strong>React 18/19</strong> and <strong>Next.js (App Router & Server Components)</strong>.
   </p>
 

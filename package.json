@@ -1,6 +1,6 @@
 {
   "name": "iconsax-next",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Tree-shakeable, multi-variant Iconsax SVG icons for React and Next.js",
   "author": {
     "name": "bagheri-dev",
@@ -10,7 +10,7 @@
     "type": "git",
     "url": "git+https://github.com/bagheri-dev/iconsax-next.git"
   },
-  "homepage": "https://github.com/bagheri-dev/iconsax-next#readme",
+  "homepage": "https://iconsax-next-landing.vercel.app",
   "bugs": {
     "url": "https://github.com/bagheri-dev/iconsax-next/issues"
   },
